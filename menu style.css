@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.category-title {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Make all menu items the same size */
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+
+    /* 🔥 Ensuring all cards are equal size */
+    width: 100%;
+    height: 350px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ensure all images fit well */
+.menu-item img {
+    width: 100%;
+    height: 200px; /* Fixed image height */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images don't stretch */
+    transition: opacity 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h5 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #444;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e63946;
+}

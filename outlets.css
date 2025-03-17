@@ -1,0 +1,39 @@
+iframe {
+    width: 100%; /* Makes the map take the full width of its container */
+    height: 220px; /* Default height */
+    max-width: 400px; /* Prevents the map from being too wide on large screens */
+    border: none; /* Removes default iframe border */
+}
+
+.outlet-card {
+    margin-bottom: 50px;
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.outlet-card img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    iframe {
+        height: 180px; /* Reduce height for smaller screens */
+    }
+
+    .outlet-card {
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 150px; /* Even smaller height for mobile */
+    }
+}
